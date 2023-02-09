@@ -9,6 +9,7 @@ export const Product = styled.div`
     display: grid;
     
 
+
     h3{
     font-family: 'Montserrat';
     font-weight: 400;
@@ -24,6 +25,7 @@ export const Product = styled.div`
     font-size: 11px;
     line-height: 12px;
     color: #2C2C2C;
+    width: 100%;
     margin-left: 5px;
 }
     div{
@@ -37,14 +39,18 @@ export const Product = styled.div`
         margin-left: 5px;
         
 
-        width: 20%;
-        height: 37%;
+        width: 25%;
+        height: 59%;
         align-items: center;
         justify-content: center;
         display: flex;
+
+        h5{
+            font-size: 49%; 
+        }
     }
 
-    img{
+    .bag{
         mix-blend-mode: normal;
     opacity: 0.84;
 
