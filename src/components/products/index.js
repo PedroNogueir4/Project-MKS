@@ -6,7 +6,7 @@ import Bag from "../../assets/shopping-bag.png";
 function Products(props) {
     return (
         <Product>
-             <img src={props.props.photo}/>
+             <img className="produto" src={props.props.photo}/>
             <h3>{props.props.name}</h3>
             <div>
                 <h5 >R$ {props.props.price}</h5>

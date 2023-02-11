@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
 width: 100vw;
 height: 100vh;
-background: black;
 display: grid;
-grid-template-rows: 12% 83% 5%;
+grid-template-rows: 11% 110% 5%;
 
 `
 

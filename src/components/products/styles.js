@@ -7,11 +7,11 @@ export const Product = styled.div`
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
     border-radius: 8px;
     display: grid;
-    grid-template-rows: 44% 9% 12% 22% 13%;
+    grid-template-rows:  40% 15% 10% 27% 8%;
     
-img{
+.produto{
 
-    width: 8.8rem;
+    width: 100px;
     
 }
 
