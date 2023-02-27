@@ -1,9 +1,19 @@
 import React from "react";
 import { Product } from "./styles";
-//import api from "../../services/api";
 import Bag from "../../assets/shopping-bag.png";
 
 function Products(props) {
+
+const addProduct = () => {
+
+const infoCart = {
+    photo:props.props.photo,
+    price:props.props.price,
+    name:props.props.name
+}
+
+}
+
     return (
         <Product>
              <img className="produto" src={props.props.photo}/>
@@ -12,7 +22,7 @@ function Products(props) {
                 <h5 >R$ {props.props.price}</h5>
             </div>
             <p>{props.props.description}</p>
-            <button><img className="bag" src={Bag} alt="sacola-de-compras" /> Comprar</button>
+            <button onClick={addProduct}><img className="bag" src={Bag} alt="sacola-de-compras" /> Comprar</button>
         </Product>
         
     );

@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import api from "../../services/api";
 import { Container, ContainerTop, ContainerMain, ContainerBottom, } from "./styles";
 import Products from "../../components/products";
-import Cart from '../../assets/Vector.png'
+import Shoppcart from "../../components/shopping"
 
 
 function App() {
   const [products, setProducts] = useState([]);
+  
 
   const receberDados = async () => {
 
@@ -18,7 +19,7 @@ function App() {
         orderBy: 'DESC',
       },
     });
-    console.log(resposta.data.products)
+    
     setProducts(resposta.data.products)
 
   };
@@ -30,16 +31,16 @@ function App() {
   }, [])
 
 
+
+
+
   return (
     <Container>
       <ContainerTop>
         <h1>
           MKS <h5>Sistemas</h5>
           </h1>
-        <button>
-          <img alt="carrinho" src={Cart}></img>
-          <p>0</p>
-        </button>
+        <Shoppcart/>
       </ContainerTop>
       <ContainerMain>
         <div className="container-itens">

@@ -29,22 +29,6 @@ align-items: center;
 justify-content: space-between;
 padding: 2%;
 
-button{
-    background: #FFFFFF;
-    border-radius: 8px;
-    cursor: pointer;
-    outline: none;
-    border: none;
-
-    display: flex;
-    gap: 10px;
-    width: 65px;
-    height: 36px;
-    padding: 9px;
-
-    :hover{opacity: 0.8;}
-    :active{opacity: 0.5;}
-}
 `
 export const ContainerMain = styled.div`
 display: flex;
